@@ -245,10 +245,12 @@ const Index = () => {
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
               Ready to turn your vision into a working product? Let's talk about what you're building and how I can help ship it.
             </p>
-            <Button variant="gradient" size="xl">
-              Book a Free Call
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer">
+              <Button variant="gradient" size="xl">
+                Book a Free Call
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
