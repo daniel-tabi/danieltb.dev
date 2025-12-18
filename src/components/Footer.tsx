@@ -5,7 +5,7 @@ const footerLinks = [
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "https://cal.com/daniel-tabi-wpfeoh/30min", external: true },
 ];
 
 export function Footer() {
@@ -34,6 +34,7 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
+                    {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.label}
