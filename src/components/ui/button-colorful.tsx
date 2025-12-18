@@ -14,7 +14,7 @@ export function ButtonColorful({
     return (
         <Button
             className={cn(
-                "relative h-12 px-8 overflow-hidden",
+                "relative h-14 px-10 text-base overflow-hidden",
                 "bg-transparent",
                 "transition-all duration-300",
                 "group",
