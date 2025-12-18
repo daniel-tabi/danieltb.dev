@@ -34,7 +34,7 @@ export function Hero() {
 
           {/* CTA */}
           <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <ButtonColorful label="Start Your MVP" />
+            <ButtonColorful label="Book a Consultation Call" className="h-16 px-12 text-lg" />
           </div>
 
           {/* Social Proof */}
