@@ -13,6 +13,7 @@ import { Rocket, Globe, Sparkles, RefreshCw, ArrowRight, User } from "lucide-rea
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import profileImage from "@/assets/profile.png";
 
 const services = [
   {
@@ -130,10 +131,12 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-2xl gradient-bg flex items-center justify-center shadow-xl">
-                  <User className="w-16 h-16 text-primary-foreground" />
-                </div>
+              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
+                <img 
+                  src={profileImage} 
+                  alt="Daniel - Founder" 
+                  className="w-full h-full object-cover rounded-3xl"
+                />
               </div>
             </div>
             <div>
