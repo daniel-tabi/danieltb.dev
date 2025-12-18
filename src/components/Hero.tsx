@@ -34,7 +34,9 @@ export function Hero() {
 
           {/* CTA */}
           <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <ButtonColorful label="Book a Consultation Call" className="h-16 px-12 text-lg" />
+            <a href="https://cal.com/daniel-tabi-wpfeoh/30min" target="_blank" rel="noopener noreferrer">
+              <ButtonColorful label="Book a Consultation Call" className="h-16 px-12 text-lg" />
+            </a>
           </div>
 
           {/* Social Proof */}
