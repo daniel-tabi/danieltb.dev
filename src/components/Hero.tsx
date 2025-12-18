@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ButtonColorful } from "@/components/ui/button-colorful";
+
 export function Hero() {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Elements */}
@@ -32,8 +32,10 @@ export function Hero() {
             Helping founders, startups, and teams turn ideas into working software without over-engineering or delays.
           </p>
 
-          {/* CTAs */}
-          
+          {/* CTA */}
+          <div className="flex justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <ButtonColorful label="Start Your MVP" />
+          </div>
 
           {/* Social Proof */}
           <div className="mt-16 pt-8 border-t border-border/50 animate-fade-in" style={{
