@@ -8,7 +8,7 @@ const navItems = [
   { label: "Process", href: "#process" },
   { label: "Work", href: "#work" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "https://cal.com/daniel-tabi-wpfeoh/30min", external: true },
 ];
 
 export function Navbar() {
@@ -47,6 +47,7 @@ export function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.label}
@@ -81,6 +82,7 @@ export function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
