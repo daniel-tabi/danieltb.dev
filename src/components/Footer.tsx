@@ -58,7 +58,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://cal.com/daniel-tabi-wpfeoh/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   <Calendar className="w-4 h-4" />
