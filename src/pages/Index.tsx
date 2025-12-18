@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { ServiceCard } from "@/components/ServiceCard";
 import { ProcessStep } from "@/components/ProcessStep";
 import { ProjectCard } from "@/components/ProjectCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
@@ -8,6 +7,7 @@ import { StatCard } from "@/components/StatCard";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Rocket, Globe, Sparkles, RefreshCw, ArrowRight, User } from "lucide-react";
 
 import project1 from "@/assets/project-1.jpg";
@@ -16,24 +16,40 @@ import project3 from "@/assets/project-3.jpg";
 
 const services = [
   {
-    icon: Rocket,
-    title: "MVP Development",
+    Icon: Rocket,
+    name: "MVP Development",
     description: "Go from idea to launched product in weeks, not months. Focused builds that validate your concept fast.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    icon: Globe,
-    title: "SaaS Web Apps",
+    Icon: Globe,
+    name: "SaaS Web Apps",
     description: "Full-featured web applications with authentication, payments, and scalable architecture built in.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />,
+    className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
-    icon: Sparkles,
-    title: "AI-Powered Features",
+    Icon: Sparkles,
+    name: "AI-Powered Features",
     description: "Integrate intelligent automation, chatbots, and AI-driven workflows into your product.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />,
+    className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
   },
   {
-    icon: RefreshCw,
-    title: "Post-Launch Iteration",
+    Icon: RefreshCw,
+    name: "Post-Launch Iteration",
     description: "Continuous improvement based on real user feedback. Ship updates that matter.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5" />,
+    className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3",
   },
 ];
 
@@ -156,11 +172,11 @@ const Index = () => {
               End-to-end development for founders who want results, not excuses.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <BentoGrid className="lg:grid-rows-2">
             {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
+              <BentoCard key={service.name} {...service} />
             ))}
-          </div>
+          </BentoGrid>
         </div>
       </section>
 
