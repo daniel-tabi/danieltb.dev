@@ -9,134 +9,110 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Rocket, Globe, Sparkles, RefreshCw, ArrowRight, User } from "lucide-react";
-
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import profileImage from "@/assets/profile.png";
-
-const services = [
-  {
-    Icon: Rocket,
-    name: "MVP Development",
-    description: "Go from idea to launched product in weeks, not months. Focused builds that validate your concept fast.",
-    href: "#contact",
-    cta: "Learn more",
-    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
-  },
-  {
-    Icon: Globe,
-    name: "SaaS Web Apps",
-    description: "Full-featured web applications with authentication, payments, and scalable architecture built in.",
-    href: "#contact",
-    cta: "Learn more",
-    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />,
-    className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: Sparkles,
-    name: "AI-Powered Features",
-    description: "Integrate intelligent automation, chatbots, and AI-driven workflows into your product.",
-    href: "#contact",
-    cta: "Learn more",
-    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />,
-    className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
-  },
-  {
-    Icon: RefreshCw,
-    name: "Post-Launch Iteration",
-    description: "Continuous improvement based on real user feedback. Ship updates that matter.",
-    href: "#contact",
-    cta: "Learn more",
-    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5" />,
-    className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3",
-  },
-];
-
-const processSteps = [
-  {
-    number: "01",
-    title: "Scope the MVP",
-    description: "Define the core features that matter. Strip away the noise and focus on what moves the needle.",
-  },
-  {
-    number: "02",
-    title: "Build & Ship Fast",
-    description: "Rapid development with weekly demos. You see progress, give feedback, and stay in control.",
-  },
-  {
-    number: "03",
-    title: "Iterate With Real Users",
-    description: "Launch, learn, improve. Build what your users actually need, not what you assumed they wanted.",
-  },
-];
-
-const projects = [
-  {
-    image: project1,
-    title: "Analytics Dashboard",
-    description: "Real-time business intelligence platform with customizable reports and integrations.",
-    tags: ["SaaS", "Web App"],
-  },
-  {
-    image: project2,
-    title: "FinTech Mobile App",
-    description: "Digital banking experience with seamless payments and financial tracking.",
-    tags: ["MVP", "Mobile"],
-  },
-  {
-    image: project3,
-    title: "AI Assistant Platform",
-    description: "Intelligent automation tool that streamlines customer support workflows.",
-    tags: ["AI", "SaaS"],
-  },
-];
-
-const testimonials = [
-  {
-    quote: "Daniel took our vague idea and turned it into a working product in just 4 weeks. The speed and quality exceeded all expectations.",
-    author: "Sarah Chen",
-    role: "Founder",
-    company: "TechFlow",
-  },
-  {
-    quote: "Finally, a developer who understands the founder mindset. No over-engineering, just smart solutions that ship.",
-    author: "Marcus Johnson",
-    role: "CEO",
-    company: "StartupLab",
-  },
-  {
-    quote: "The AI features he built into our platform completely transformed how we serve our customers. Game-changing work.",
-    author: "Emily Rodriguez",
-    role: "Product Lead",
-    company: "DataCo",
-  },
-];
-
-const stats = [
-  { value: "4-6", label: "Weeks to MVP" },
-  { value: "100%", label: "Founder-Led Builds" },
-  { value: "AI-First", label: "Development Approach" },
-];
-
+const services = [{
+  Icon: Rocket,
+  name: "MVP Development",
+  description: "Go from idea to launched product in weeks, not months. Focused builds that validate your concept fast.",
+  href: "#contact",
+  cta: "Learn more",
+  background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />,
+  className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
+}, {
+  Icon: Globe,
+  name: "SaaS Web Apps",
+  description: "Full-featured web applications with authentication, payments, and scalable architecture built in.",
+  href: "#contact",
+  cta: "Learn more",
+  background: <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />,
+  className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
+}, {
+  Icon: Sparkles,
+  name: "AI-Powered Features",
+  description: "Integrate intelligent automation, chatbots, and AI-driven workflows into your product.",
+  href: "#contact",
+  cta: "Learn more",
+  background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />,
+  className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
+}, {
+  Icon: RefreshCw,
+  name: "Post-Launch Iteration",
+  description: "Continuous improvement based on real user feedback. Ship updates that matter.",
+  href: "#contact",
+  cta: "Learn more",
+  background: <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5" />,
+  className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3"
+}];
+const processSteps = [{
+  number: "01",
+  title: "Scope the MVP",
+  description: "Define the core features that matter. Strip away the noise and focus on what moves the needle."
+}, {
+  number: "02",
+  title: "Build & Ship Fast",
+  description: "Rapid development with weekly demos. You see progress, give feedback, and stay in control."
+}, {
+  number: "03",
+  title: "Iterate With Real Users",
+  description: "Launch, learn, improve. Build what your users actually need, not what you assumed they wanted."
+}];
+const projects = [{
+  image: project1,
+  title: "Analytics Dashboard",
+  description: "Real-time business intelligence platform with customizable reports and integrations.",
+  tags: ["SaaS", "Web App"]
+}, {
+  image: project2,
+  title: "FinTech Mobile App",
+  description: "Digital banking experience with seamless payments and financial tracking.",
+  tags: ["MVP", "Mobile"]
+}, {
+  image: project3,
+  title: "AI Assistant Platform",
+  description: "Intelligent automation tool that streamlines customer support workflows.",
+  tags: ["AI", "SaaS"]
+}];
+const testimonials = [{
+  quote: "Daniel took our vague idea and turned it into a working product in just 4 weeks. The speed and quality exceeded all expectations.",
+  author: "Sarah Chen",
+  role: "Founder",
+  company: "TechFlow"
+}, {
+  quote: "Finally, a developer who understands the founder mindset. No over-engineering, just smart solutions that ship.",
+  author: "Marcus Johnson",
+  role: "CEO",
+  company: "StartupLab"
+}, {
+  quote: "The AI features he built into our platform completely transformed how we serve our customers. Game-changing work.",
+  author: "Emily Rodriguez",
+  role: "Product Lead",
+  company: "DataCo"
+}];
+const stats = [{
+  value: "4-6",
+  label: "Weeks to MVP"
+}, {
+  value: "100%",
+  label: "Founder-Led Builds"
+}, {
+  value: "AI-First",
+  label: "Development Approach"
+}];
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
 
       {/* About Section */}
-      <section id="about" className="section-padding bg-secondary/30">
+      <section id="about" className="section-padding bg-secondary/30 rounded-none border-dashed">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
-                <img 
-                  src={profileImage} 
-                  alt="Daniel - Founder" 
-                  className="w-full h-full object-cover rounded-3xl"
-                />
+                <img src={profileImage} alt="Daniel - Founder" className="w-full h-full border-8 border-double rounded-sm object-scale-down" />
               </div>
             </div>
             <div>
@@ -176,9 +152,7 @@ const Index = () => {
             </p>
           </div>
           <BentoGrid className="lg:grid-rows-2">
-            {services.map((service) => (
-              <BentoCard key={service.name} {...service} />
-            ))}
+            {services.map(service => <BentoCard key={service.name} {...service} />)}
           </BentoGrid>
         </div>
       </section>
@@ -198,13 +172,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
-            {processSteps.map((step, index) => (
-              <ProcessStep
-                key={step.number}
-                {...step}
-                isLast={index === processSteps.length - 1}
-              />
-            ))}
+            {processSteps.map((step, index) => <ProcessStep key={step.number} {...step} isLast={index === processSteps.length - 1} />)}
           </div>
         </div>
       </section>
@@ -213,9 +181,7 @@ const Index = () => {
       <section className="py-16 bg-background">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-y border-border py-8">
-            {stats.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
-            ))}
+            {stats.map(stat => <StatCard key={stat.label} {...stat} />)}
           </div>
         </div>
       </section>
@@ -235,9 +201,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
-            ))}
+            {projects.map(project => <ProjectCard key={project.title} {...project} />)}
           </div>
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
@@ -263,9 +227,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.author} {...testimonial} />
-            ))}
+            {testimonials.map(testimonial => <TestimonialCard key={testimonial.author} {...testimonial} />)}
           </div>
         </div>
       </section>
@@ -292,8 +254,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
