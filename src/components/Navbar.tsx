@@ -8,7 +8,7 @@ const navItems = [
   { label: "Process", href: "#process" },
   { label: "Work", href: "#work" },
   { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "https://tally.so/r/WOr5xJ", external: true },
+  { label: "Contact", href: "https://cal.com/daniel-tabi-wpfeoh/30min", external: true },
 ];
 
 export function Navbar() {
@@ -57,7 +57,7 @@ export function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer">
+            <a href="https://cal.com/daniel-tabi-wpfeoh/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="gradient" size="default">
                 Book a Call
               </Button>
@@ -89,7 +89,7 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://cal.com/daniel-tabi-wpfeoh/30min" target="_blank" rel="noopener noreferrer" className="block">
               <Button variant="gradient" size="default" className="w-full mt-4">
                 Book a Call
               </Button>

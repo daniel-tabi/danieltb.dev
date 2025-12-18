@@ -5,7 +5,7 @@ const footerLinks = [
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "Work", href: "#work" },
-  { label: "Contact", href: "https://tally.so/r/WOr5xJ", external: true },
+  { label: "Contact", href: "https://cal.com/daniel-tabi-wpfeoh/30min", external: true },
 ];
 
 export function Footer() {
@@ -59,7 +59,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://tally.so/r/WOr5xJ"
+                  href="https://cal.com/daniel-tabi-wpfeoh/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm"
