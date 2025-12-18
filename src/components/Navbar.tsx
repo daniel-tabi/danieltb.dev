@@ -56,9 +56,11 @@ export function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Button variant="gradient" size="default">
-              Book a Call
-            </Button>
+            <a href="https://cal.com/daniel-tabi-wpfeoh/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="gradient" size="default">
+                Book a Call
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,9 +87,11 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
-            <Button variant="gradient" size="default" className="w-full mt-4">
-              Book a Call
-            </Button>
+            <a href="https://cal.com/daniel-tabi-wpfeoh/30min" target="_blank" rel="noopener noreferrer" className="block">
+              <Button variant="gradient" size="default" className="w-full mt-4">
+                Book a Call
+              </Button>
+            </a>
           </div>
         </div>
       )}
