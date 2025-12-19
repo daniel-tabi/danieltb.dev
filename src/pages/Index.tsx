@@ -128,10 +128,12 @@ const Index = () => {
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Using modern tech and AI-powered workflows, I ship faster than traditional teams while keeping quality high. Your product gets built by the same person you talk to — from day one to launch and beyond.
               </p>
-              <Button variant="outline" size="lg">
-                Learn How I Work
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+              <a href="#process">
+                <Button variant="outline" size="lg">
+                  Learn How I Work
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
