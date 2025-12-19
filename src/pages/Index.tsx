@@ -140,7 +140,7 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="section-padding">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <Badge variant="secondary" className="mb-4">
               Services
             </Badge>
@@ -160,7 +160,7 @@ const Index = () => {
       {/* Process Section */}
       <section id="process" className="section-padding bg-secondary/30">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <Badge variant="secondary" className="mb-4">
               Process
             </Badge>
@@ -189,7 +189,7 @@ const Index = () => {
       {/* Work Section */}
       <section id="work" className="section-padding">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <Badge variant="secondary" className="mb-4">
               Portfolio
             </Badge>
@@ -215,7 +215,7 @@ const Index = () => {
       {/* Testimonials Section */}
       <section id="testimonials" className="section-padding bg-secondary/30">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <Badge variant="secondary" className="mb-4">
               Testimonials
             </Badge>
