@@ -1,7 +1,7 @@
 import { ButtonColorful } from "@/components/ui/button-colorful";
 
 export function Hero() {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  return <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 pb-12">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
@@ -40,7 +40,7 @@ export function Hero() {
           </div>
 
           {/* Social Proof */}
-          <div className="mt-16 pt-8 border-t border-border/50 animate-fade-in" style={{
+          <div className="mt-10 pt-6 border-t border-border/50 animate-fade-in" style={{
           animationDelay: "0.4s"
         }}>
             <p className="text-sm text-muted-foreground">
