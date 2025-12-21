@@ -82,18 +82,6 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
               </Button>
             </a>
-            <a 
-              href="#process" 
-              className="w-full sm:w-auto"
-            >
-              <Button 
-                variant="outline" 
-                size="xl" 
-                className="w-full sm:w-auto"
-              >
-                See How I Work
-              </Button>
-            </a>
           </div>
 
           {/* Trust Indicators */}
