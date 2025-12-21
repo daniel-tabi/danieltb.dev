@@ -109,11 +109,13 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="section-padding bg-secondary/30">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
-                <img src={profileImage} alt="Daniel - Founder" className="w-full h-full object-scale-down border-0 border-secondary border-none rounded-none shadow-none opacity-95" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="relative lg:pl-4">
+              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden p-6 ring-1 ring-primary/10 shadow-lg">
+                <img src={profileImage} alt="Daniel - Founder" className="w-full h-full object-scale-down opacity-95" />
               </div>
+              {/* Subtle gradient glow behind image */}
+              <div className="absolute -inset-4 -z-10 bg-gradient-to-br from-primary/5 to-accent/5 rounded-[2rem] blur-xl" />
             </div>
             <div>
               <Badge variant="secondary" className="mb-4">
@@ -180,9 +182,9 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-background">
+      <section className="py-20 bg-background">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-y border-border py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-y border-border py-12">
             {stats.map(stat => <StatCard key={stat.label} {...stat} />)}
           </div>
         </div>
@@ -202,11 +204,11 @@ const Index = () => {
               A few examples of products shipped for founders like you.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map(project => <ProjectCard key={project.title} {...project} />)}
           </div>
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
+          <div className="text-center mt-14">
+            <Button variant="gradient" size="lg" className="btn-glow">
               View More Work
               <ArrowRight className="w-4 h-4" />
             </Button>
@@ -228,7 +230,7 @@ const Index = () => {
               Real feedback from founders I've partnered with.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map(testimonial => <TestimonialCard key={testimonial.author} {...testimonial} />)}
           </div>
         </div>
@@ -242,17 +244,20 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
               Have an Idea?{" "}
-              <span className="gradient-text">Let's Build It.</span>
+              <span className="gradient-text text-4xl md:text-5xl lg:text-6xl">Let's Build It.</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
               Ready to turn your vision into a working product? Let's talk about what you're building and how I can help ship it.
             </p>
-            <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer">
-              <Button variant="gradient" size="xl">
-                Book a Free Call
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </a>
+            <div className="flex flex-col items-center gap-3">
+              <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer">
+                <Button variant="gradient" size="xl" className="btn-glow">
+                  Book a Free Call
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <span className="text-sm text-muted-foreground">Takes 30 seconds — no commitment</span>
+            </div>
           </div>
         </div>
       </section>

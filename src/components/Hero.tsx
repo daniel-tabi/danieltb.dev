@@ -45,7 +45,7 @@ export function Hero() {
 
           {/* Main Headline */}
           <h1 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.08] tracking-tight text-foreground mb-6 animate-fade-in"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight md:leading-[1.1] tracking-tight text-foreground mb-6 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
             I Build MVPs That{" "}
@@ -56,7 +56,7 @@ export function Hero() {
 
           {/* Subheading */}
           <p 
-            className="text-lg md:text-xl font-medium text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in"
+            className="text-lg md:text-xl font-medium text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
             From scoped MVPs to scalable SaaS, I help founders turn validated ideas into polished products — without over-engineering.
@@ -76,7 +76,7 @@ export function Hero() {
               <Button 
                 variant="gradient" 
                 size="xl" 
-                className="w-full sm:w-auto group shadow-lg hover:shadow-xl"
+                className="w-full sm:w-auto group shadow-lg btn-glow"
               >
                 Book your consultation call
                 <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
@@ -96,27 +96,22 @@ export function Hero() {
             </a>
           </div>
 
-          {/* Trust Indicators */}
+          {/* Scroll Cue */}
           <div 
-            className="mt-16 pt-8 border-t border-border/40 animate-fade-in"
-            style={{ animationDelay: "0.5s" }}
+            className="mt-16 animate-fade-in"
+            style={{ animationDelay: "0.6s" }}
           >
-            <p className="text-xs font-medium text-muted-foreground mb-4 tracking-wide uppercase">
-              Trusted by founders, startups & indie builders
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              {["Founders", "Startups", "Indie Builders", "Product Teams"].map((label, i) => (
-                <div 
-                  key={label}
-                  className="flex items-center gap-2 text-sm font-medium text-foreground/60 hover:text-foreground transition-colors"
-                  style={{ animationDelay: `${0.55 + i * 0.05}s` }}
-                >
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  {label}
-                </div>
-              ))}
-            </div>
+            <a 
+              href="#about" 
+              className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <span className="text-sm font-medium">Scroll to explore</span>
+              <div className="w-6 h-10 rounded-full border-2 border-border flex items-start justify-center p-1.5">
+                <div className="w-1.5 h-2.5 bg-primary rounded-full animate-bounce" />
+              </div>
+            </a>
           </div>
+
         </div>
       </div>
     </section>

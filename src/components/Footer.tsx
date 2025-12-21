@@ -11,7 +11,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="bg-secondary/50 border-t border-border">
-      <div className="container-custom py-12 md:py-16">
+      <div className="container-custom py-10 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand */}
           <div>
@@ -81,8 +81,8 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-border">
-          <p className="text-center text-sm text-muted-foreground">
+        <div className="mt-10 pt-6 border-t border-border">
+          <p className="text-center text-xs text-muted-foreground/80">
             © {new Date().getFullYear()} danieltb.dev. All rights reserved.
           </p>
         </div>

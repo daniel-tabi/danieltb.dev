@@ -137,11 +137,20 @@
   }
   
   .section-padding {
-    @apply py-20 md:py-28 lg:py-32;
+    @apply py-24 md:py-28 lg:py-32;
   }
   
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .btn-glow:hover {
+    box-shadow: 0 0 30px hsla(214, 79%, 56%, 0.4);
+    transform: translateY(-2px);
   }
 }
 
