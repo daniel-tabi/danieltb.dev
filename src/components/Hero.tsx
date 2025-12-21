@@ -38,7 +38,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-foreground text-background text-sm font-semibold tracking-tight">
               <span>💻</span>
-              <span>Founder-Led Builds, Ready to Ship Fast</span>
+              <span>For Founders</span>
               <span>⚡</span>
             </div>
           </div>
