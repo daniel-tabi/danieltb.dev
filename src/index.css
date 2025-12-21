@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
     
-    --primary: 214 83% 56%;
+    --primary: 214 79% 56%;
     --primary-foreground: 0 0% 100%;
     
     --secondary: 220 20% 98%;
@@ -24,7 +24,7 @@
     --muted: 220 20% 98%;
     --muted-foreground: 215 16% 47%;
     
-    --accent: 258 100% 71%;
+    --accent: 262 100% 71%;
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
@@ -32,25 +32,28 @@
     
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 214 83% 56%;
+    --ring: 214 79% 56%;
     
     --radius: 0.75rem;
     
-    /* Brand specific */
-    --brand-dark: 217 33% 17%;
-    --brand-blue: 214 83% 56%;
-    --brand-purple: 258 100% 71%;
+    /* Brand specific - danieltb.dev palette */
+    --brand-slate: 222 47% 11%;
+    --brand-blue: 214 79% 56%;
+    --brand-purple: 262 100% 71%;
+    --brand-gray: 0 0% 27%;
     
     /* Gradients */
-    --gradient-brand: linear-gradient(135deg, hsl(214 83% 56%) 0%, hsl(258 100% 71%) 100%);
-    --gradient-glow: radial-gradient(circle at center, hsla(214, 83%, 56%, 0.15) 0%, transparent 70%);
+    --gradient-brand: linear-gradient(135deg, hsl(214 79% 56%) 0%, hsl(262 100% 71%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsla(214, 79%, 56%, 0.12) 0%, transparent 70%);
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 98%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsla(214, 79%, 56%, 0.08) 0%, transparent 50%);
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsla(222, 47%, 11%, 0.05);
     --shadow-md: 0 4px 6px -1px hsla(222, 47%, 11%, 0.07), 0 2px 4px -2px hsla(222, 47%, 11%, 0.05);
     --shadow-lg: 0 10px 15px -3px hsla(222, 47%, 11%, 0.08), 0 4px 6px -4px hsla(222, 47%, 11%, 0.05);
     --shadow-lift: 0 20px 25px -5px hsla(222, 47%, 11%, 0.1), 0 8px 10px -6px hsla(222, 47%, 11%, 0.05);
+    --shadow-glow: 0 0 40px hsla(214, 79%, 56%, 0.25);
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
