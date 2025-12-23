@@ -13,96 +13,122 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import profileImage from "@/assets/profile.png";
-const services = [{
-  Icon: Rocket,
-  name: "MVP Development",
-  description: "Go from idea to launched product in weeks, not months. Focused builds that validate your concept fast.",
-  href: "#contact",
-  cta: "Learn more",
-  background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />,
-  className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
-}, {
-  Icon: Globe,
-  name: "SaaS Web Apps",
-  description: "Full-featured web applications with authentication, payments, and scalable architecture built in.",
-  href: "#contact",
-  cta: "Learn more",
-  background: <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />,
-  className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2"
-}, {
-  Icon: Sparkles,
-  name: "AI-Powered Features",
-  description: "Integrate intelligent automation, chatbots, and AI-driven workflows into your product.",
-  href: "#contact",
-  cta: "Learn more",
-  background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />,
-  className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3"
-}, {
-  Icon: RefreshCw,
-  name: "Post-Launch Iteration",
-  description: "Continuous improvement based on real user feedback. Ship updates that matter.",
-  href: "#contact",
-  cta: "Learn more",
-  background: <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5" />,
-  className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3"
-}];
-const processSteps = [{
-  number: "01",
-  title: "Scope the MVP",
-  description: "Define the core features that matter. Strip away the noise and focus on what moves the needle."
-}, {
-  number: "02",
-  title: "Build & Ship Fast",
-  description: "Rapid development with weekly demos. You see progress, give feedback, and stay in control."
-}, {
-  number: "03",
-  title: "Iterate With Real Users",
-  description: "Launch, learn, improve. Build what your users actually need, not what you assumed they wanted."
-}];
-const projects = [{
-  image: project1,
-  title: "Analytics Dashboard",
-  description: "Real-time business intelligence platform with customizable reports and integrations.",
-  tags: ["SaaS", "Web App"]
-}, {
-  image: project2,
-  title: "FinTech Mobile App",
-  description: "Digital banking experience with seamless payments and financial tracking.",
-  tags: ["MVP", "Mobile"]
-}, {
-  image: project3,
-  title: "AI Assistant Platform",
-  description: "Intelligent automation tool that streamlines customer support workflows.",
-  tags: ["AI", "SaaS"]
-}];
-const testimonials = [{
-  quote: "Daniel took our vague idea and turned it into a working product in just 4 weeks. The speed and quality exceeded all expectations.",
-  author: "Sarah Chen",
-  role: "Founder",
-  company: "TechFlow"
-}, {
-  quote: "Finally, a developer who understands the founder mindset. No over-engineering, just smart solutions that ship.",
-  author: "Marcus Johnson",
-  role: "CEO",
-  company: "StartupLab"
-}, {
-  quote: "The AI features he built into our platform completely transformed how we serve our customers. Game-changing work.",
-  author: "Emily Rodriguez",
-  role: "Product Lead",
-  company: "DataCo"
-}];
-const stats = [{
-  value: "4-6",
-  label: "Weeks to MVP"
-}, {
-  value: "100%",
-  label: "Founder-Led Builds"
-}, {
-  value: "AI-First",
-  label: "Development Approach"
-}];
+const services = [
+  {
+    Icon: Rocket,
+    name: "MVP Development",
+    description:
+      "Go from idea to launched product in weeks, not months. Focused builds that validate your concept fast.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+  },
+  {
+    Icon: Globe,
+    name: "SaaS Web Apps",
+    description: "Full-featured web applications with authentication, payments, and scalable architecture built in.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />,
+    className: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+  },
+  {
+    Icon: Sparkles,
+    name: "AI-Powered Features",
+    description: "Integrate intelligent automation, chatbots, and AI-driven workflows into your product.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />,
+    className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+  },
+  {
+    Icon: RefreshCw,
+    name: "Post-Launch Iteration",
+    description: "Continuous improvement based on real user feedback. Ship updates that matter.",
+    href: "#contact",
+    cta: "Learn more",
+    background: <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/5" />,
+    className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3",
+  },
+];
+const processSteps = [
+  {
+    number: "01",
+    title: "Scope the MVP",
+    description: "Define the core features that matter. Strip away the noise and focus on what moves the needle.",
+  },
+  {
+    number: "02",
+    title: "Build & Ship Fast",
+    description: "Rapid development with weekly demos. You see progress, give feedback, and stay in control.",
+  },
+  {
+    number: "03",
+    title: "Iterate With Real Users",
+    description: "Launch, learn, improve. Build what your users actually need, not what you assumed they wanted.",
+  },
+];
+const projects = [
+  {
+    image: project1,
+    title: "Analytics Dashboard",
+    description: "Real-time business intelligence platform with customizable reports and integrations.",
+    tags: ["SaaS", "Web App"],
+  },
+  {
+    image: project2,
+    title: "FinTech Mobile App",
+    description: "Digital banking experience with seamless payments and financial tracking.",
+    tags: ["MVP", "Mobile"],
+  },
+  {
+    image: project3,
+    title: "AI Assistant Platform",
+    description: "Intelligent automation tool that streamlines customer support workflows.",
+    tags: ["AI", "SaaS"],
+  },
+];
+const testimonials = [
+  {
+    quote:
+      "Daniel took our vague idea and turned it into a working product in just 4 weeks. The speed and quality exceeded all expectations.",
+    author: "Sarah Chen",
+    role: "Founder",
+    company: "TechFlow",
+  },
+  {
+    quote:
+      "Finally, a developer who understands the founder mindset. No over-engineering, just smart solutions that ship.",
+    author: "Marcus Johnson",
+    role: "CEO",
+    company: "StartupLab",
+  },
+  {
+    quote:
+      "The AI features he built into our platform completely transformed how we serve our customers. Game-changing work.",
+    author: "Emily Rodriguez",
+    role: "Product Lead",
+    company: "DataCo",
+  },
+];
+const stats = [
+  {
+    value: "2-4",
+    label: "Weeks to MVP",
+  },
+  {
+    value: "100%",
+    label: "Founder-Built Product",
+  },
+  {
+    value: "AI-First",
+    label: "Development Approach",
+  },
+];
 const Index = () => {
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
 
@@ -125,10 +151,13 @@ const Index = () => {
                 I Build Products, Not Slide Decks
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm Daniel — a solo developer who partners directly with founders to build software that works. No agency overhead, no project managers, no endless meetings. Just focused execution from someone who's been in your shoes.
+                I'm Daniel — a solo developer who partners directly with founders to build software that works. No
+                agency overhead, no project managers, no endless meetings. Just focused execution from someone who's
+                been in your shoes.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Using modern tech and AI-powered workflows, I ship faster than traditional teams while keeping quality high. Your product gets built by the same person you talk to — from day one to launch and beyond.
+                Using modern tech and AI-powered workflows, I ship faster than traditional teams while keeping quality
+                high. Your product gets built by the same person you talk to — from day one to launch and beyond.
               </p>
               <a href="#process">
                 <Button variant="outline" size="lg">
@@ -148,15 +177,15 @@ const Index = () => {
             <Badge variant="secondary" className="mb-4">
               Services
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What I Build
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">What I Build</h2>
             <p className="text-lg text-muted-foreground">
               End-to-end development for founders who want results, not excuses.
             </p>
           </div>
           <BentoGrid className="lg:grid-rows-2">
-            {services.map(service => <BentoCard key={service.name} {...service} />)}
+            {services.map((service) => (
+              <BentoCard key={service.name} {...service} />
+            ))}
           </BentoGrid>
         </div>
       </section>
@@ -176,7 +205,9 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
-            {processSteps.map((step, index) => <ProcessStep key={step.number} {...step} isLast={index === processSteps.length - 1} />)}
+            {processSteps.map((step, index) => (
+              <ProcessStep key={step.number} {...step} isLast={index === processSteps.length - 1} />
+            ))}
           </div>
         </div>
       </section>
@@ -185,7 +216,9 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-y border-border py-12">
-            {stats.map(stat => <StatCard key={stat.label} {...stat} />)}
+            {stats.map((stat) => (
+              <StatCard key={stat.label} {...stat} />
+            ))}
           </div>
         </div>
       </section>
@@ -197,15 +230,13 @@ const Index = () => {
             <Badge variant="secondary" className="mb-4">
               Portfolio
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Selected Builds
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              A few examples of products shipped for founders like you.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Selected Builds</h2>
+            <p className="text-lg text-muted-foreground">A few examples of products shipped for founders like you.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map(project => <ProjectCard key={project.title} {...project} />)}
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
           </div>
           <div className="text-center mt-14">
             <Button variant="gradient" size="lg" className="btn-glow">
@@ -223,15 +254,13 @@ const Index = () => {
             <Badge variant="secondary" className="mb-4">
               Testimonials
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Clients Say
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Real feedback from founders I've partnered with.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">What Clients Say</h2>
+            <p className="text-lg text-muted-foreground">Real feedback from founders I've partnered with.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map(testimonial => <TestimonialCard key={testimonial.author} {...testimonial} />)}
+            {testimonials.map((testimonial) => (
+              <TestimonialCard key={testimonial.author} {...testimonial} />
+            ))}
           </div>
         </div>
       </section>
@@ -243,11 +272,11 @@ const Index = () => {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-              Have an Idea?{" "}
-              <span className="gradient-text text-4xl md:text-5xl lg:text-6xl">Let's Build It.</span>
+              Have an Idea? <span className="gradient-text text-4xl md:text-5xl lg:text-6xl">Let's Build It.</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Ready to turn your vision into a working product? Let's talk about what you're building and how I can help ship it.
+              Ready to turn your vision into a working product? Let's talk about what you're building and how I can help
+              ship it.
             </p>
             <div className="flex flex-col items-center gap-3">
               <a href="https://tally.so/r/WOr5xJ" target="_blank" rel="noopener noreferrer">
@@ -263,6 +292,7 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
 export default Index;
